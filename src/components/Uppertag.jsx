@@ -23,6 +23,7 @@ const Uppertag = () => {
           Top relevant <FaAngleDown />
         </div>
       </div>
+      <hr />
     </div>
   );
 };
