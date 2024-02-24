@@ -13,10 +13,10 @@ const Uppertag = () => {
         <div className="left">
           <div className="last">
             {" "}
-            <CiCircleCheck /> last updated - February 20, 2023
+            <CiCircleCheck size={20} /> last updated - February 20, 2023
           </div>
           <div className="advertising">
-            <CiCircleInfo /> Advertising Disclosure
+            <CiCircleInfo size={20} /> Advertising Disclosure
           </div>
         </div>
         <div className="right">
