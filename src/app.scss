@@ -5,10 +5,19 @@
   margin: 0;
   font-family: "Inter", sans-serif;
 }
+.search {
+  position: absolute;
+  height: 24px;
+  top: 6px;
+  width: 24px;
+  color: #212731;
+  left: 6px;
+}
 
 .navbar {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   align-items: center;
   background-color: #212731;
   padding: 12px 256px;
@@ -16,6 +25,7 @@
   font-size: 14px;
 
   .input {
+    position: relative;
     background-color: white;
     border-radius: 12px;
     border: none;
@@ -31,6 +41,8 @@
     list-style-type: none;
     justify-content: space-around;
     align-items: center;
+    padding: 0;
+
     li {
       margin: 0 16px;
     }
@@ -123,22 +135,36 @@
 }
 .footer {
   background-color: #212731;
-  padding: 0 96px;
+  padding: 0 256px;
   color: #b6bdc4;
   display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 280px;
+  align-items: center;
   padding-top: 48px;
-  padding-bottom: 256px;
+  padding-bottom: 144px;
+  .info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 180px;
+    ul {
+      padding: 0;
+    }
+  }
 
   .us {
     display: flex;
     justify-content: center;
+    gap: 10px;
     align-items: center;
     h1 {
       font-size: 13px;
       color: #d1d6da;
       font-weight: 300;
+    }
+    .arrow_down {
+      font-weight: 100;
     }
   }
   .categories,
@@ -151,8 +177,7 @@
     }
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
     ul {
       display: flex;
       flex-direction: column;
@@ -363,6 +388,17 @@ img {
   }
 }
 @media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 12px 4px;
+    font-size: 8px;
+    ul {
+      justify-content: flex-start;
+      justify-content: space-between;
+      margin-top: 12px;
+    }
+  }
   .cardsDown {
     h1 {
       font-size: 24px;
@@ -379,6 +415,10 @@ img {
     flex-direction: column;
     justify-content: flex-start;
     padding: 48px 0px;
+    gap: 12px;
+    .info {
+      flex-direction: column;
+    }
   }
   .uppertag {
     .headline {
@@ -394,6 +434,7 @@ img {
         width: auto;
         position: none;
         bottom: 2px;
+        margin-top: 24px;
         .star_rating {
           position: block;
           left: auto;
@@ -407,8 +448,8 @@ img {
 
 @media screen and (max-width: 1268px) {
   .navbar {
-    flex-direction: column;
-    justify-content: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 12px 4px;
     font-size: 12px;
     ul {
@@ -430,6 +471,14 @@ img {
       .dates {
         display: flex;
       }
+    }
+  }
+  .footer {
+    justify-content: space-between;
+
+    padding: 48px 0px;
+    .info {
+      gap: 24px;
     }
   }
 }

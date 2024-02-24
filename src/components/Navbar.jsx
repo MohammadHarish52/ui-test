@@ -1,7 +1,10 @@
+import { CiSearch } from "react-icons/ci";
 const Navbar = () => {
   return (
     <div className="navbar">
-      <div className="input"></div>
+      <div className="input">
+        <CiSearch className="search" />
+      </div>
       <div className="inputList">
         <ul>
           <li>categories</li>
