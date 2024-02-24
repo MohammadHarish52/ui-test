@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: none;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #212731;
+  padding: 12px 256px;
+  color: #d1d6da;
+  font-size: 14px;
+
+  .input {
+    background-color: white;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    height: 37px;
+    width: 258px;
+  }
+  .inputList {
+    padding: 10px 0;
+  }
+  ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+    li {
+      margin: 0 16px;
+    }
+  }
+}
+.wrapper {
+  padding: 12px 256px;
+  background-color: #fbfcfd;
+}
+.uppertag {
+  display: flex;
+  color: #2c384a;
+  flex-direction: column;
+  .dates {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0;
+    align-items: center;
+    font-size: 14px;
+    .left {
+      display: flex;
+      .last,
+      .advertising {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .last {
+        margin-right: 10px;
+      }
+    }
+    .right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .headline {
+    h1 {
+      font-size: 48px;
+      font-weight: 500;
+    }
+  }
+}
+.footer {
+  background-color: #212731;
+  padding: 0 96px;
+  color: #b6bdc4;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+
+  padding-top: 48px;
+  padding-bottom: 256px;
+
+  .us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      font-size: 13px;
+      color: #d1d6da;
+      font-weight: 300;
+    }
+  }
+  .categories,
+  .contact {
+    h2 {
+      text-transform: uppercase;
+      font-weight: 300;
+      font-size: 16px;
+      color: #fff;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    ul {
+      display: flex;
+      flex-direction: column;
+      list-style-type: none;
+      line-height: 2;
+      li {
+        line-height: 3;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1098px) {
+  .navbar {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 12px 4px;
+    font-size: 12px;
+    ul {
+      justify-content: flex-start;
+    }
+  }
+  .wrapper {
+    padding: 12px 4px;
+    background-color: #fbfcfd;
+  }
+  .uppertag {
+    display: flex;
+    color: #2c384a;
+    flex-direction: column;
+    .headline {
+      h1 {
+        font-size: 48px;
+      }
+      .dates {
+        display: flex;
+      }
+    }
+  }
+}
+
+img {
+  height: 103px;
+  width: 141px;
+}
+.cardsDown {
+  h1 {
+    font-size: 32px;
+    font-weight: 500;
+    color: #2c384a;
+    padding: 6px 0;
+  }
+  .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+
+    .card {
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 8px 12px;
+      height: 425px;
+      width: 333px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      .img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 24px 12px;
+      }
+      .discount {
+        display: flex;
+        font-size: 13px;
+        color: #074786;
+
+        span {
+          background-color: #f2f4f7;
+          padding: 4px;
+          margin: 4px 4px;
+          border-radius: 6px;
+        }
+        span:hover {
+          text-decoration: underline;
+        }
+      }
+      .price {
+        display: flex;
+        gap: 10px;
+        h1 {
+          font-size: 20px;
+          color: #566874;
+        }
+      }
+      .discountprice {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+      button {
+        border: none;
+        padding: 16px;
+        border-radius: 6px;
+        background-color: #1b88f4;
+        color: #fff;
+        font-size: 16px;
+      }
+    }
+  }
+}
