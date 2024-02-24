@@ -260,6 +260,108 @@ img {
     }
   }
 }
+.mainCard {
+  display: flex;
+  flex-direction: column;
+  .image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    p {
+      margin-top: 8px;
+      font-size: 13px;
+      color: #2c384a;
+    }
+  }
+  .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    h2,
+    h3 {
+      font-size: 16px;
+      font-weight: 500;
+      color: #4b5665;
+    }
+    h1 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #4b5665;
+    }
+    span {
+      color: #1b88f4;
+    }
+    h3 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 12px;
+    }
+  }
+  .card {
+    display: flex;
+    gap: 24px;
+    background-color: #fff;
+    border-radius: 12px;
+    margin: 24px 0;
+    padding: 24px;
+    border-radius: 12px;
+    button {
+      border: none;
+      padding: 12px;
+      border-radius: 6px;
+      background-color: #1b88f4;
+      width: 100%;
+      color: #fff;
+      font-size: 16px;
+    }
+    .ratingSection {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 24px;
+      width: 240px;
+      // border: 1px solid red;
+      .star_rating {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        width: 135px;
+        height: 118px;
+        background-color: #f3f9ff;
+        padding: 8px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        margin-bottom: 24px;
+        margin-top: -24px;
+        // position: absolute;
+        // top: -24px;
+        h1 {
+          color: #074786;
+          font-weight: 500;
+          font-size: 32px;
+        }
+        h2 {
+          font-size: 14px;
+          color: #074786;
+          font-weight: 500;
+        }
+      }
+      button {
+        padding: 12px 96px;
+        // position: absolute;
+        // right: 0;
+        // bottom: 2px;
+      }
+    }
+  }
+}
 @media screen and (max-width: 768px) {
   .cardsDown {
     h1 {
@@ -285,9 +387,25 @@ img {
       }
     }
   }
+  .mainCard {
+    .card {
+      flex-direction: column;
+      .ratingSection {
+        width: auto;
+        position: none;
+        bottom: 2px;
+        .star_rating {
+          position: block;
+          left: auto;
+          right: auto;
+          margin-bottom: 36px;
+        }
+      }
+    }
+  }
 }
 
-@media screen and (max-width: 1098px) {
+@media screen and (max-width: 1268px) {
   .navbar {
     flex-direction: column;
     justify-content: flex-start;
