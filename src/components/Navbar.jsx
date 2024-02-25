@@ -7,8 +7,8 @@ const Navbar = () => {
       </div>
       <div className="inputList">
         <ul>
-          <li>categories</li>
-          <li>website Builders</li>
+          <li>Categories</li>
+          <li>Website Builders</li>
           <li>Today's deals</li>
         </ul>
       </div>

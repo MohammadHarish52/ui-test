@@ -1,6 +1,8 @@
 import { cardsData } from "../constants/CardData";
 import { IoIosStar } from "react-icons/io";
 import { IoIosStarHalf } from "react-icons/io";
+import { GoTrophy } from "react-icons/go";
+import { IoDiamondOutline } from "react-icons/io5";
 
 const MainCard = () => {
   const renderStars = (stars) => {
@@ -43,27 +45,41 @@ const MainCard = () => {
 
   return (
     <div className="mainCard">
-      {cardsData.map((index) => {
+      {cardsData.map((data, index) => {
         return (
-          <div className="card" key={index.id}>
+          <div className="card" key={data.id}>
+            {(index === 0 || index === 1) && (
+              <div className="choice">
+                {/* Conditionally render icon */}
+                {data.icon === "GoTrophy" ? (
+                  <GoTrophy className="icon" />
+                ) : data.icon === "IoDiamondOutline" ? (
+                  <IoDiamondOutline className="icon" />
+                ) : null}
+                <h3>{data.choice}</h3>
+              </div>
+            )}
+            <div className="number">
+              <h1>{data.num}</h1>
+            </div>
             <div className="image">
-              <img src={index.img} alt="" />
-              <p>{index.title}</p>
+              <img src={data.img} alt="" />
+              <p>{data.title}</p>
             </div>
             <div className="description">
               <h2>
-                <b>{index.MainTitle}</b> - {index.description}
+                <b>{data.MainTitle}</b> - {data.description}
               </h2>
               <h1>Main Highlights</h1>
-              <h3>{index.highlights}</h3>
+              <h3>{data.highlights}</h3>
 
               <span>Show more</span>
             </div>
             <div className="ratingSection">
               <div className="star_rating">
-                <h1>{index.starRating}</h1>
-                <h2>{index.StarTitle}</h2>
-                <span> {renderStars(index.stars)}</span>
+                <h1>{data.starRating}</h1>
+                <h2>{data.StarTitle}</h2>
+                <span> {renderStars(data.stars)}</span>
               </div>
               <button>View</button>
             </div>
