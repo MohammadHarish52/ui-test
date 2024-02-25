@@ -46,7 +46,7 @@ const Second = () => {
         <h1>4</h1>
       </div>
       <div className="image">
-        <img src="/public/assets/laptop.png" alt="" />
+        <img src="/assets/laptop.png" alt="" />
         <p>CDK</p>
       </div>
       <div className="description">

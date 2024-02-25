@@ -1,7 +1,7 @@
 export let cards = [
   {
     id: "1",
-    img: "/public/assets/laptop.png",
+    img: "/assets/laptop.png",
     off: "20% off",
     time: "Limited time",
     title: "Webbuilder 1",
@@ -13,7 +13,7 @@ export let cards = [
   },
   {
     id: "2",
-    img: "/public/assets/laptop.png",
+    img: "/assets/laptop.png",
     off: "20% off",
     time: "Limited time",
     title: "Webbuilder 1",
@@ -25,7 +25,7 @@ export let cards = [
   },
   {
     id: "3",
-    img: "/public/assets/laptop.png",
+    img: "/assets/laptop.png",
     off: "20% off",
     time: "Limited time",
     title: "Webbuilder 1",

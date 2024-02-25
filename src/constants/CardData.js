@@ -4,7 +4,7 @@ export const cardsData = [
     choice: "Best Choice",
     icon: "GoTrophy",
     num: 1,
-    img: "/public/assets/laptop.png",
+    img: "/assets/laptop.png",
     title: "Builder 1",
     MainTitle: "WixPro 72-inch Responsive Website Builder",
     description:
@@ -20,7 +20,7 @@ export const cardsData = [
     choice: "Best Value",
     icon: "IoDiamondOutline",
     num: 2,
-    img: "/public/assets/laptop.png",
+    img: "/assets/laptop.png",
     title: "Builder 1",
     MainTitle: "SiteCraft 68-inch Ultimate Web Design Studio",
     description:
@@ -36,7 +36,7 @@ export const cardsData = [
     choice: "Best Value",
     icon: "IoDiamondOutline",
     num: 3,
-    img: "/public/assets/laptop.png",
+    img: "/assets/laptop.png",
     title: "Builder 1",
     MainTitle: "WixPro 72-inch Responsive Website Builder",
     description:
