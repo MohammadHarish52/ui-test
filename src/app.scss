@@ -5,6 +5,9 @@
   margin: 0;
   font-family: "Inter", sans-serif;
 }
+hr {
+  background-color: #e1e4e6;
+}
 .search {
   position: absolute;
   height: 24px;
@@ -23,15 +26,23 @@
   padding: 12px 256px;
   color: #d1d6da;
   font-size: 14px;
-
+  input,
   .input {
-    position: relative;
     background-color: white;
     border-radius: 12px;
     border: none;
     outline: none;
     height: 37px;
     width: 258px;
+  }
+  input {
+    width: 228px;
+    position: absolute;
+    padding-left: 32px;
+  }
+
+  .input {
+    position: relative;
   }
   .inputList {
     padding: 10px 0;
@@ -672,6 +683,7 @@ img {
   .footer {
     flex-direction: column;
     justify-content: flex-start;
+    align-items: flex-start;
     padding: 48px 0px;
     gap: 12px;
     .info {
@@ -700,6 +712,9 @@ img {
         position: none;
         bottom: 2px;
         margin-top: 24px;
+        button {
+          padding: 12px 0;
+        }
         .star_rating {
           position: block;
           left: auto;
@@ -716,6 +731,9 @@ img {
       position: none;
       bottom: 2px;
       margin-top: 24px;
+      button {
+        padding: 12px 0;
+      }
       .star_rating {
         position: block;
         left: auto;
@@ -731,6 +749,15 @@ img {
         width: 240px;
       }
     }
+  }
+}
+@media screen and (max-width: 768px) {
+  .navbar,
+  .wrapper {
+    padding: 12px 12px;
+  }
+  .footer {
+    padding: 48px 12px;
   }
 }
 

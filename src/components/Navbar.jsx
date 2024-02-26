@@ -3,6 +3,7 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="input">
+        <input type="text" />
         <CiSearch className="search" />
       </div>
       <div className="inputList">

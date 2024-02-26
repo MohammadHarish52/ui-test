@@ -1,6 +1,6 @@
 import { CiCircleCheck } from "react-icons/ci";
 import { CiCircleInfo } from "react-icons/ci";
-import { FaAngleDown } from "react-icons/fa";
+import { IoChevronDownSharp } from "react-icons/io5";
 
 const Uppertag = () => {
   return (
@@ -13,14 +13,32 @@ const Uppertag = () => {
         <div className="left">
           <div className="last">
             {" "}
-            <CiCircleCheck size={20} /> last updated - February 20, 2023
+            <CiCircleCheck
+              size={20}
+              style={{
+                marginRight: "8px",
+              }}
+            />{" "}
+            Last updated - February 22, 2020
           </div>
           <div className="advertising">
-            <CiCircleInfo size={20} /> Advertising Disclosure
+            <CiCircleInfo
+              size={20}
+              style={{
+                marginRight: "8px",
+              }}
+            />{" "}
+            Advertising Disclosure
           </div>
         </div>
         <div className="right">
-          Top relevant <FaAngleDown />
+          Top relevant{" "}
+          <IoChevronDownSharp
+            style={{
+              marginLeft: "8px",
+              fontWeight: "bold",
+            }}
+          />
         </div>
       </div>
       <hr />
