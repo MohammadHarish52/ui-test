@@ -6,7 +6,7 @@ const Second = () => {
   const renderStars = (stars) => {
     const yellowStars = [];
     const fullStars = Math.floor(stars);
-    const hasHalfStar = stars % 1 >= 0.1;
+    const hasHalfStar = stars % 1 > 0;
 
     // Render full stars
     for (let i = 0; i < fullStars; i++) {
@@ -91,7 +91,7 @@ const Second = () => {
         <div className="star_rating">
           <h1>9.1</h1>
           <h2>Very Good</h2>
-          <span> {renderStars(4)}</span>
+          <span> {renderStars(4.1)}</span>
         </div>
         <button>View</button>
       </div>
