@@ -5,7 +5,13 @@ const Footer = () => {
     <div className="footer">
       <div className="info">
         <div className="categories">
-          <h2>Categories</h2>
+          <h2
+            style={{
+              marginBottom: "4px",
+            }}
+          >
+            Categories
+          </h2>
           <ul>
             <li>Web builder</li>
             <li>Hosting</li>
@@ -14,7 +20,13 @@ const Footer = () => {
           </ul>
         </div>
         <div className="contact">
-          <h2>Contact</h2>
+          <h2
+            style={{
+              marginBottom: "4px",
+            }}
+          >
+            Contact
+          </h2>
           <ul>
             <li>Contact </li>
             <li>Privacy policy</li>
