@@ -19,7 +19,7 @@ const Footer = () => {
             <li>Contact </li>
             <li>Privacy policy</li>
             <li>Terms of Service</li>
-            <li>categories</li>
+            <li>Categories</li>
             <li>About</li>
           </ul>
         </div>
